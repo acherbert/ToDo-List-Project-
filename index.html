@@ -1,0 +1,18 @@
+<div id="app">
+  <div class="app-wrapper">
+<!--     <button v-on:click="save">Save</button> -->
+    <header class="app-header">
+      <h1 class="app-title">ToDo List</h1>
+      <link rel="stylesheet" href="main.css">
+    </header>
+  <ul class="todo-list" v-for="todo in todos">
+    <li v-on:click="removeTodo($index)" class="todo-item" v-bind:class="{ 'todo-item--removed': todo.removed }">{{todo.text}} <span class="todo-delete">X</span></li>
+  </ul>
+    <div class="app-form">
+      <input class="input-field" type="text" v-model="newTodo" placeholder="Insert your new task" v-on:keyup.enter="addTodo" />
+    </div>
+  </div>
+</div>
+
+<br /><br /><br /><br /><br />
+<h2> &copy; Ashley Herbert 2018 Homework for week 4 for ID-330 </h2>

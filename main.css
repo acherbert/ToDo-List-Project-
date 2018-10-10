@@ -1,0 +1,79 @@
+*, *:after {
+  box-sizing: border-box;
+}
+body {
+  background-image: url("bkg.jpg");
+  color: #8099A9;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2{
+  color:black;
+}
+.app-wrapper {
+  max-width: 550px;
+  margin: 20px auto;
+  background: #F6F6F6;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.app-header {
+  text-align: center;
+  background: #F6F6F6;
+}
+.app-title {
+  margin: 0;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 40px;
+  border-bottom: 1px solid #80999a;
+}
+
+.todo-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.todo-item {
+  line-height: 40px;
+  font-size: 16px;
+  padding: 0 20px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+.todo-item:hover {
+  text-decoration: line-through;
+  color: white;
+  background-color: #80999A;
+  .todo-delete {
+    display: block;
+  }
+}
+.todo-item--removed {
+  text-decoration: line-through;
+  color: #D3d3d3;
+}
+.todo-delete {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+.input-field {
+  display: block;
+  width: 100%;
+  border:0;
+  padding: 0 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  box-sizing: border-box;
+  line-height: 40px;
+  font-size: 16px;
+  color: #8099A9;
+}
+.input-field:focus {
+  box-shadow: none;
+  outline: none;
+}
